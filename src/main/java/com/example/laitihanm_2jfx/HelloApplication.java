@@ -20,7 +20,7 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class Main extends Application {
+public class HelloApplication extends Application {
 
     private TableView table = new TableView();
     private ObservableList<Mahasiswa> data;
@@ -92,8 +92,8 @@ public class Main extends Application {
         stage.show();
 
         data = FXCollections.observableArrayList(
-                new Mahasiswa("Berryl", "202210370311122", "berrylkontol@gmail.com"),
-                new Mahasiswa("Fazza", "202210370311120", "Fazzaasu@gmail.com")
+                new Mahasiswa("Rizal", "202210370311122", "Rizal@gmail.com"),
+                new Mahasiswa("Fazza", "202210370311120", "Fazza@gmail.com")
         );
 
         nameCol.setCellValueFactory(
